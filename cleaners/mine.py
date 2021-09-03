@@ -69,9 +69,7 @@ class Cleaner:
                 text = self.db_patterns[db_name].sub(db_name.upper(), text)
         return text
 
-    def clean(self, turn):
-        text = turn["utterance"]
-
+    def clean(self, text):
         text = text.lower()
         text = contractions.fix(text)
         text = self.replace_dbs(text)

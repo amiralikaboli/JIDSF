@@ -232,6 +232,9 @@ class Cleaner:
     def delexicalise_reference_number(self, sent, turn):
         """Based on the belief state, we can find reference number that
         during data gathering was created randomly."""
+        if turn is None:
+            return sent
+
         domains = ['restaurant', 'hotel', 'attraction', 'train', 'taxi', 'hospital']  # , 'police']
         if turn['metadata']:
             for domain in domains:
@@ -253,8 +256,7 @@ class Cleaner:
                         sent = (' ' + sent + ' ').replace(' ' + key + ' ', ' ' + val + ' ')
         return sent
 
-    def clean(self, turn):
-        text = turn["text"]
+    def clean(self, text, turn=None):
         sent = self.normalize(text)
         sent = " ".join(sent.split())
         sent = self.delexicalise(sent)
