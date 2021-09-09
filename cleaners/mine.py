@@ -82,7 +82,7 @@ class Cleaner:
 
     def tokenize(self, text):
         words = text.split()
-        words = [self.lemmatizer.lemmatize(word) if not word.isupper() else word for word in words]
-        words = [self.stemmer.stem(word) if not word.isupper() else word for word in words]
-        words = [word for word in words if word not in self.stop_words]
+        #         words = [self.lemmatizer.lemmatize(word) if not word.isupper() else word for word in words]
+        #         words = [self.stemmer.stem(word) if not word.isupper() else word for word in words]
+        #         words = [word for word in words if word not in self.stop_words]
         return words

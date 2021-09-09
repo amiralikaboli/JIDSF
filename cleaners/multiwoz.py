@@ -1,6 +1,10 @@
 import json
 import re
 
+from nltk.corpus import stopwords
+from nltk.stem import WordNetLemmatizer
+from nltk.stem.porter import PorterStemmer
+
 
 class Cleaner:
     def __init__(self, mapping_path, db_path):
@@ -15,6 +19,10 @@ class Cleaner:
         self.digitpat = re.compile('\d+')
 
         self.dic = self.prepare_slot_values_independent(db_path)
+
+        self.lemmatizer = WordNetLemmatizer()
+        self.stemmer = PorterStemmer()
+        self.stop_words = set(stopwords.words('english'))
 
     def prepare_slot_values_independent(self, db_path):
         domains = ['restaurant', 'hotel', 'attraction', 'train', 'taxi', 'hospital', 'police']
@@ -226,7 +234,7 @@ class Cleaner:
         for key, val in self.dic:
             utt = (' ' + utt + ' ').replace(' ' + key + ' ', ' ' + val + ' ')
             utt = utt[1:-1]  # why this?
-
+        utt = " ".join(utt.split())
         return utt
 
     def delexicalise_reference_number(self, sent, turn):
@@ -254,13 +262,19 @@ class Cleaner:
                         # try reference with ref#
                         key = self.normalize("ref#" + turn['metadata'][domain]['book']['booked'][0][slot])
                         sent = (' ' + sent + ' ').replace(' ' + key + ' ', ' ' + val + ' ')
+        sent = " ".join(sent.split())
         return sent
 
     def clean(self, text, turn=None):
         sent = self.normalize(text)
-        sent = " ".join(sent.split())
         sent = self.delexicalise(sent)
-        sent = self.delexicalise_reference_number(sent, turn)
-        sent = " ".join(sent.split())
+        #         sent = self.delexicalise_reference_number(sent, turn)
         sent = re.sub(self.digitpat, '[value_count]', sent)
         return sent
+
+    def tokenize(self, text):
+        words = text.split()
+        words = [self.lemmatizer.lemmatize(word) if not word.isupper() else word for word in words]
+        # words = [self.stemmer.stem(word) if not word.isupper() else word for word in words]
+        # words = [word for word in words if word not in self.stop_words]
+        return words
