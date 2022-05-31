@@ -185,7 +185,6 @@ class Cleaner:
         # replace time and and price
         text = re.sub(self.timepat, ' [value_time] ', text)
         text = re.sub(self.pricepat, ' [value_price] ', text)
-        # text = re.sub(pricepat2, '[value_price]', text)
 
         # replace st.
         text = text.replace(';', ',')
@@ -268,7 +267,7 @@ class Cleaner:
     def clean(self, text, turn=None):
         sent = self.normalize(text)
         sent = self.delexicalise(sent)
-        #         sent = self.delexicalise_reference_number(sent, turn)
+        # sent = self.delexicalise_reference_number(sent, turn)
         sent = re.sub(self.digitpat, '[value_count]', sent)
         return sent
 
