@@ -1,0 +1,1073 @@
+{
+    "dialogue_id": "MUL2138.json",
+    "services": [
+        "train",
+        "hotel"
+    ],
+    "turns": {
+        "turn_id": [
+            "0",
+            "1",
+            "2",
+            "3",
+            "4",
+            "5",
+            "6",
+            "7",
+            "8",
+            "9",
+            "10",
+            "11",
+            "12",
+            "13",
+            "14",
+            "15"
+        ],
+        "speaker": [
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1,
+            0,
+            1
+        ],
+        "utterance": [
+            "Hi. I'm looking for a train to Norwich. Can you help please?",
+            "Sure, I'm finding 133 trains to norwich. I can narrow that down if you tell me where you're departing from.",
+            "I'm leaving from Cambridge on Sunday.",
+            "I have several results still. What time would you like to depart and arrive?",
+            "I would like to arrive by 19:00.",
+            "Certainly, we have a variety of departure times, the last train to arrive before 19:00 departs at 17:36 and arrives at 18:55. Would this interest you?",
+            "Yes, that sounds good. I will need 6 seats booked please.",
+            "I've booked 6 tickets for you, and your reference number is ZU6ERCQG .",
+            "Thanks, hate to bug you again but I need a 4 star place to stay that has free wifi and parking.",
+            "What area would you prefer?",
+            "I prefer a hotel in the center of town.",
+            "the alexander bed and breakfast is in the cheap range and the university arms hotel is in the expensive range. Which do you prefer?",
+            "Either is fine. Could you try to book one of those for 6 people for five nights, starting Tuesday?",
+            "Since you mentioned a hotel rather than a guesthouse, I've booked you at the University Arms Hotel, but just let me know if you prefer the other. Your reference# is P8GZALBU .",
+            "Thank you so much. You have been very helpful.",
+            "Great! I hope you enjoy your stay!"
+        ],
+        "frames": [
+            {
+                "service": [
+                    "train"
+                ],
+                "state": [
+                    {
+                        "active_intent": "find_train",
+                        "requested_slots": [],
+                        "slots_values": {
+                            "slots_values_name": [
+                                "train-destination"
+                            ],
+                            "slots_values_list": [
+                                [
+                                    "norwich"
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "slots": [
+                    {
+                        "slot": [],
+                        "value": [],
+                        "start": [],
+                        "exclusive_end": [],
+                        "copy_from": [],
+                        "copy_from_value": []
+                    }
+                ]
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [
+                    "train"
+                ],
+                "state": [
+                    {
+                        "active_intent": "find_train",
+                        "requested_slots": [],
+                        "slots_values": {
+                            "slots_values_name": [
+                                "train-day",
+                                "train-departure",
+                                "train-destination"
+                            ],
+                            "slots_values_list": [
+                                [
+                                    "sunday"
+                                ],
+                                [
+                                    "cambridge"
+                                ],
+                                [
+                                    "norwich"
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "slots": [
+                    {
+                        "slot": [],
+                        "value": [],
+                        "start": [],
+                        "exclusive_end": [],
+                        "copy_from": [],
+                        "copy_from_value": []
+                    }
+                ]
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [
+                    "train"
+                ],
+                "state": [
+                    {
+                        "active_intent": "find_train",
+                        "requested_slots": [],
+                        "slots_values": {
+                            "slots_values_name": [
+                                "train-arriveby",
+                                "train-day",
+                                "train-departure",
+                                "train-destination"
+                            ],
+                            "slots_values_list": [
+                                [
+                                    "19:00"
+                                ],
+                                [
+                                    "sunday"
+                                ],
+                                [
+                                    "cambridge"
+                                ],
+                                [
+                                    "norwich"
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "slots": [
+                    {
+                        "slot": [
+                            "train-arriveby"
+                        ],
+                        "value": [
+                            "19:00"
+                        ],
+                        "start": [
+                            31
+                        ],
+                        "exclusive_end": [
+                            26
+                        ],
+                        "copy_from": [
+                            ""
+                        ],
+                        "copy_from_value": [
+                            []
+                        ]
+                    }
+                ]
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [
+                    "train"
+                ],
+                "state": [
+                    {
+                        "active_intent": "book_train",
+                        "requested_slots": [],
+                        "slots_values": {
+                            "slots_values_name": [
+                                "train-arriveby",
+                                "train-bookpeople",
+                                "train-day",
+                                "train-departure",
+                                "train-destination"
+                            ],
+                            "slots_values_list": [
+                                [
+                                    "19:00"
+                                ],
+                                [
+                                    "6"
+                                ],
+                                [
+                                    "sunday"
+                                ],
+                                [
+                                    "cambridge"
+                                ],
+                                [
+                                    "norwich"
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "slots": [
+                    {
+                        "slot": [],
+                        "value": [],
+                        "start": [],
+                        "exclusive_end": [],
+                        "copy_from": [],
+                        "copy_from_value": []
+                    }
+                ]
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [
+                    "hotel"
+                ],
+                "state": [
+                    {
+                        "active_intent": "find_hotel",
+                        "requested_slots": [],
+                        "slots_values": {
+                            "slots_values_name": [
+                                "hotel-internet",
+                                "hotel-parking",
+                                "hotel-stars"
+                            ],
+                            "slots_values_list": [
+                                [
+                                    "yes"
+                                ],
+                                [
+                                    "yes"
+                                ],
+                                [
+                                    "4"
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "slots": [
+                    {
+                        "slot": [],
+                        "value": [],
+                        "start": [],
+                        "exclusive_end": [],
+                        "copy_from": [],
+                        "copy_from_value": []
+                    }
+                ]
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [
+                    "hotel"
+                ],
+                "state": [
+                    {
+                        "active_intent": "find_hotel",
+                        "requested_slots": [],
+                        "slots_values": {
+                            "slots_values_name": [
+                                "hotel-area",
+                                "hotel-internet",
+                                "hotel-parking",
+                                "hotel-stars",
+                                "hotel-type"
+                            ],
+                            "slots_values_list": [
+                                [
+                                    "centre"
+                                ],
+                                [
+                                    "yes"
+                                ],
+                                [
+                                    "yes"
+                                ],
+                                [
+                                    "4"
+                                ],
+                                [
+                                    "hotel"
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "slots": [
+                    {
+                        "slot": [],
+                        "value": [],
+                        "start": [],
+                        "exclusive_end": [],
+                        "copy_from": [],
+                        "copy_from_value": []
+                    }
+                ]
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [
+                    "hotel"
+                ],
+                "state": [
+                    {
+                        "active_intent": "book_hotel",
+                        "requested_slots": [],
+                        "slots_values": {
+                            "slots_values_name": [
+                                "hotel-area",
+                                "hotel-bookday",
+                                "hotel-bookpeople",
+                                "hotel-bookstay",
+                                "hotel-internet",
+                                "hotel-name",
+                                "hotel-parking",
+                                "hotel-stars",
+                                "hotel-type"
+                            ],
+                            "slots_values_list": [
+                                [
+                                    "centre"
+                                ],
+                                [
+                                    "tuesday"
+                                ],
+                                [
+                                    "6"
+                                ],
+                                [
+                                    "5"
+                                ],
+                                [
+                                    "yes"
+                                ],
+                                [
+                                    "dontcare"
+                                ],
+                                [
+                                    "yes"
+                                ],
+                                [
+                                    "4"
+                                ],
+                                [
+                                    "hotel"
+                                ]
+                            ]
+                        }
+                    }
+                ],
+                "slots": [
+                    {
+                        "slot": [],
+                        "value": [],
+                        "start": [],
+                        "exclusive_end": [],
+                        "copy_from": [],
+                        "copy_from_value": []
+                    }
+                ]
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            },
+            {
+                "service": [],
+                "state": [],
+                "slots": []
+            }
+        ],
+        "dialogue_acts": [
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "destination"
+                            ],
+                            "slot_value": [
+                                "norwich"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slot_name": [
+                        "destination"
+                    ],
+                    "act_slot_value": [
+                        "norwich"
+                    ],
+                    "span_start": [
+                        31
+                    ],
+                    "span_end": [
+                        38
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-Inform",
+                        "Train-Request"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "choice",
+                                "destination"
+                            ],
+                            "slot_value": [
+                                "133",
+                                "norwich"
+                            ]
+                        },
+                        {
+                            "slot_name": [
+                                "departure"
+                            ],
+                            "slot_value": [
+                                "?"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-Inform",
+                        "Train-Inform"
+                    ],
+                    "act_slot_name": [
+                        "choice",
+                        "destination"
+                    ],
+                    "act_slot_value": [
+                        "133",
+                        "norwich"
+                    ],
+                    "span_start": [
+                        18,
+                        32
+                    ],
+                    "span_end": [
+                        21,
+                        39
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "day",
+                                "departure"
+                            ],
+                            "slot_value": [
+                                "sunday",
+                                "cambridge"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-Inform",
+                        "Train-Inform"
+                    ],
+                    "act_slot_name": [
+                        "departure",
+                        "day"
+                    ],
+                    "act_slot_value": [
+                        "cambridge",
+                        "sunday"
+                    ],
+                    "span_start": [
+                        17,
+                        30
+                    ],
+                    "span_end": [
+                        26,
+                        36
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-Inform",
+                        "Train-Request"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "choice"
+                            ],
+                            "slot_value": [
+                                "several"
+                            ]
+                        },
+                        {
+                            "slot_name": [
+                                "arriveby",
+                                "leaveat"
+                            ],
+                            "slot_value": [
+                                "?",
+                                "?"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slot_name": [
+                        "choice"
+                    ],
+                    "act_slot_value": [
+                        "several"
+                    ],
+                    "span_start": [
+                        7
+                    ],
+                    "span_end": [
+                        14
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "arriveby"
+                            ],
+                            "slot_value": [
+                                "19:00"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slot_name": [
+                        "arriveby"
+                    ],
+                    "act_slot_value": [
+                        "19:00"
+                    ],
+                    "span_start": [
+                        26
+                    ],
+                    "span_end": [
+                        31
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-Inform",
+                        "Train-Select"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "arriveby",
+                                "arriveby",
+                                "choice"
+                            ],
+                            "slot_value": [
+                                "17:36",
+                                "18:55",
+                                "variety"
+                            ]
+                        },
+                        {
+                            "slot_name": [
+                                "none"
+                            ],
+                            "slot_value": [
+                                "none"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-Inform",
+                        "Train-Inform",
+                        "Train-Inform"
+                    ],
+                    "act_slot_name": [
+                        "choice",
+                        "arriveby",
+                        "arriveby"
+                    ],
+                    "act_slot_value": [
+                        "variety",
+                        "17:36",
+                        "18:55"
+                    ],
+                    "span_start": [
+                        21,
+                        98,
+                        119
+                    ],
+                    "span_end": [
+                        28,
+                        103,
+                        124
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "bookpeople"
+                            ],
+                            "slot_value": [
+                                "6"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-Inform"
+                    ],
+                    "act_slot_name": [
+                        "bookpeople"
+                    ],
+                    "act_slot_value": [
+                        "6"
+                    ],
+                    "span_start": [
+                        35
+                    ],
+                    "span_end": [
+                        36
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Train-OfferBooked"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "bookpeople",
+                                "ref"
+                            ],
+                            "slot_value": [
+                                "6",
+                                "ZU6ERCQG"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Train-OfferBooked",
+                        "Train-OfferBooked"
+                    ],
+                    "act_slot_name": [
+                        "bookpeople",
+                        "ref"
+                    ],
+                    "act_slot_value": [
+                        "6",
+                        "ZU6ERCQG"
+                    ],
+                    "span_start": [
+                        12,
+                        60
+                    ],
+                    "span_end": [
+                        13,
+                        68
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Hotel-Inform"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "internet",
+                                "parking",
+                                "stars"
+                            ],
+                            "slot_value": [
+                                "yes",
+                                "yes",
+                                "4"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Hotel-Inform"
+                    ],
+                    "act_slot_name": [
+                        "stars"
+                    ],
+                    "act_slot_value": [
+                        "4"
+                    ],
+                    "span_start": [
+                        43
+                    ],
+                    "span_end": [
+                        44
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Hotel-Request"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "area"
+                            ],
+                            "slot_value": [
+                                "?"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [],
+                    "act_slot_name": [],
+                    "act_slot_value": [],
+                    "span_start": [],
+                    "span_end": []
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Hotel-Inform"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "area",
+                                "type"
+                            ],
+                            "slot_value": [
+                                "centre",
+                                "hotel"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Hotel-Inform",
+                        "Hotel-Inform"
+                    ],
+                    "act_slot_name": [
+                        "type",
+                        "area"
+                    ],
+                    "act_slot_value": [
+                        "hotel",
+                        "centre"
+                    ],
+                    "span_start": [
+                        11,
+                        24
+                    ],
+                    "span_end": [
+                        16,
+                        30
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Hotel-Inform",
+                        "Hotel-Select"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "name",
+                                "name",
+                                "pricerange",
+                                "pricerange"
+                            ],
+                            "slot_value": [
+                                "the alexander bed and breakfast",
+                                "university arms hotel",
+                                "cheap range",
+                                "expensive range"
+                            ]
+                        },
+                        {
+                            "slot_name": [
+                                "none"
+                            ],
+                            "slot_value": [
+                                "none"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Hotel-Inform",
+                        "Hotel-Inform",
+                        "Hotel-Inform",
+                        "Hotel-Inform"
+                    ],
+                    "act_slot_name": [
+                        "name",
+                        "pricerange",
+                        "name",
+                        "pricerange"
+                    ],
+                    "act_slot_value": [
+                        "the alexander bed and breakfast",
+                        "cheap range",
+                        "university arms hotel",
+                        "expensive range"
+                    ],
+                    "span_start": [
+                        0,
+                        42,
+                        62,
+                        94
+                    ],
+                    "span_end": [
+                        31,
+                        53,
+                        83,
+                        109
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Hotel-Inform"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "bookday",
+                                "bookpeople",
+                                "bookstay"
+                            ],
+                            "slot_value": [
+                                "tuesday",
+                                "6",
+                                "5"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Hotel-Inform",
+                        "Hotel-Inform",
+                        "Hotel-Inform"
+                    ],
+                    "act_slot_name": [
+                        "bookpeople",
+                        "bookstay",
+                        "bookday"
+                    ],
+                    "act_slot_value": [
+                        "6",
+                        "5",
+                        "tuesday"
+                    ],
+                    "span_start": [
+                        55,
+                        68,
+                        90
+                    ],
+                    "span_end": [
+                        56,
+                        72,
+                        97
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "Booking-Book"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "name",
+                                "ref"
+                            ],
+                            "slot_value": [
+                                "University Arms Hotel",
+                                "P8GZALBU"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [
+                        "Booking-Book",
+                        "Booking-Book"
+                    ],
+                    "act_slot_name": [
+                        "name",
+                        "ref"
+                    ],
+                    "act_slot_value": [
+                        "University Arms Hotel",
+                        "P8GZALBU"
+                    ],
+                    "span_start": [
+                        77,
+                        165
+                    ],
+                    "span_end": [
+                        98,
+                        173
+                    ]
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "general-thank"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "none"
+                            ],
+                            "slot_value": [
+                                "none"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [],
+                    "act_slot_name": [],
+                    "act_slot_value": [],
+                    "span_start": [],
+                    "span_end": []
+                }
+            },
+            {
+                "dialog_act": {
+                    "act_type": [
+                        "general-greet"
+                    ],
+                    "act_slots": [
+                        {
+                            "slot_name": [
+                                "none"
+                            ],
+                            "slot_value": [
+                                "none"
+                            ]
+                        }
+                    ]
+                },
+                "span_info": {
+                    "act_type": [],
+                    "act_slot_name": [],
+                    "act_slot_value": [],
+                    "span_start": [],
+                    "span_end": []
+                }
+            }
+        ]
+    }
+}
